@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Asp.Versioning.Mvc" Version="8.1.0" />
+		<PackageReference Include="Middlewares.Authentication" Version="1.0.1" />
+		<PackageReference Include="Serilog.Enrichers.Datadog.OpenTelemetry" Version="1.2.0" />
+		<PackageReference Include="Serilog.Exceptions" Version="8.4.0" />
+		<PackageReference Include="Serilog" Version="4.0.0" />
+		<PackageReference Include="WebServiceExtensions.Authorize" Version="1.0.1" />
+
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.8" />
+		<PackageReference Include="Serilog.AspNetCore" Version="8.0.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\AlmeidaERP.Application\AlmeidaERP.Application.csproj" />
+		<ProjectReference Include="..\AlmeidaERP.Core\AlmeidaERP.Core.csproj" />
+	</ItemGroup>
+
+</Project>
